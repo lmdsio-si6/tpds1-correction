@@ -24,9 +24,6 @@ case "NEWS" :
     $abonnement = "newsletter uniquement";
     break;
 }
-if (isset($_POST["notifier"])) {
-    $notifier = true;
-}
 ?>
 
 <!doctype html>
@@ -44,11 +41,5 @@ if (isset($_POST["notifier"])) {
     <?php echo 'Vous êtes de nationalité ' . $nationalite; ?>
     <br><br>
     <?php echo 'Abonnement choisi : ' . $abonnement; ?>
-    <br><br>
-    <?php
-    if ($notifier) {
-        echo 'Un courriel de confirmation vous a été envoyé.';
-    }
-    ?>
 </body>
 </html>
