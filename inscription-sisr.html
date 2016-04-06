@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Formulaire d'inscription</title>
+</head>
+</body>
+    <h1>Formulaire d'inscription</h1>
+    <form action="inscription-sisr.php" method="post">
+        <p><label for="prenom">Prénom :</label>
+        <input type="text" name="prenom" id="prenom" size="20" required /></p>
+        <p><label for="nom">Nom :</label>
+        <input type="text" name="nom" id="nom" size="20" required /></p>
+        <p><label for="courriel">Courriel :</label>
+        <input type="email" name="courriel" id="courriel" size="20" required placeholder="utilisateur@domaine.fr"/></p>
+        <p><label for="mdp">Mot de passe :</label>
+        <input type="password" name="mdp" id="mdp" size="15" required /></p>
+        <p><label for="nationalite">Nationalité :</label>
+            <select name="nationalite" id="nationalite">
+                <option value="FR" selected>Française</option>
+                <option value="BE">Belge</option>
+                <option value="SUI">Suisse</option>
+            </select>
+        </p>
+        <p>
+            <input type="radio" name="abonnement" value="NEWSPROMO" checked />M'abonner à la newsletter et aux promotions<br />
+            <input type="radio" name="abonnement" value="NEWS" />M'abonner uniquement à la newsletter<br />
+            <input type="radio" name="abonnement" value="RIEN" />Ne pas m'abonner<br />
+        </p>
+        <p><input type="checkbox" name="notifier" />M'envoyer une confirmation d'inscription</p>
+        <input type="submit" value="Envoyer" />
+    </form>
+</body>
+</html>
