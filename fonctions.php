@@ -18,7 +18,7 @@ function escape($valeur)
  * @return PDO Objet de connexion à la BD
  */
 function getBdd() {
-    return new PDO("mysql:host=localhost;dbname=personnel;charset=utf8",
-        "personnel_util", "secret",
+    return new PDO("mysql:host=localhost;dbname=bdtheque;charset=utf8",
+        "bdtheque_util", "secret",
         array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 }
