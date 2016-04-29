@@ -31,12 +31,12 @@ catch (Exception $e) {
 <body>
     <div class="container">
         <?php if (isset($bd)) { ?>
-        <h3><?php echo escape($bd['nom']) ?></h3>
-        <ul>
-            <li>Auteur : <?php echo escape($bd['auteur']) ?></li>
-            <li>Nombre d'albums : <?php echo escape($bd['nbAlbums']) ?></li>
-            <li>Catégorie : <?php echo escape($bd['libelle']) ?></li>
-        </ul>
+            <h3><?php echo escape($bd['nom']) ?></h3>
+            <ul>
+                <li>Auteur : <?php echo escape($bd['auteur']) ?></li>
+                <li>Nombre d'albums : <?php echo escape($bd['nbAlbums']) ?></li>
+                <li>Catégorie : <?php echo escape($bd['libelle']) ?></li>
+            </ul>
         <?php }
         else { ?>
             <div class="alert alert-danger">Erreur !</div>
